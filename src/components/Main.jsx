@@ -14,6 +14,7 @@ import "./pages/Arsenal/config.css";
 import Footer from './Footer.jsx'
 import YandMap from "./YandMap";
 import Chat from "./Chat";
+// import 'animate.css'
 
 
 const Main = () => {
