@@ -14,8 +14,8 @@ import "./pages/Arsenal/config.css";
 import Footer from './Footer.jsx'
 import YandMap from "./YandMap";
 import Chat from "./Chat";
-// import 'animate.css'
-
+import 'animate.css'
+import Slider from "./Slider";
 
 const Main = () => {
   return (
@@ -45,6 +45,7 @@ const Main = () => {
           </div>
         </div>
       </main>
+      <Slider />
       <Stock />
       <section className="cardsSection">
         <Carts />

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import cart from "./img/cart.png";
 
 const Cart = () => {
-  
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => {
@@ -15,10 +14,7 @@ const Cart = () => {
         <img width={"60px"} src={cart} alt="" />
         {open && (
           <div className="cart">
-            <button 
-              className="closeBtn" 
-              onClick={handleOpen}
-            >
+            <button className="closeBtn" onClick={handleOpen}>
               X
             </button>
           </div>

@@ -1,5 +1,7 @@
 const initialState = {
   products: [],
+  categories: [],
+  cartItems: [],
 };
 
 export const barReducer = (state = initialState, action) => {
@@ -9,7 +11,6 @@ export const barReducer = (state = initialState, action) => {
         ...state,
         products: action.payload,
       };
-
     default:
       return state;
   }
@@ -18,9 +19,9 @@ export const barReducer = (state = initialState, action) => {
 export const getProducts = () => {
   return async (dispatch) => {
     try {
-      const res = await fetch('http://localhost:6006/products')
+      const res = await fetch("http://localhost:6006/products");
       const data = await res.json();
-        dispatch({ type: "getProducts", payload: data });
+      dispatch({ type: "getProducts", payload: data });
     } catch (error) {
       console.log("ошибка в getProducts");
     }
