@@ -41,7 +41,9 @@ const PcPage = () => {
               </div>
             );
           })}
+          
         </div>
+       
       </div>
     </>
   );
