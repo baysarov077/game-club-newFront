@@ -1,4 +1,5 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import Footer from "../../Footer";
 import Header from "../../Header";
 import PcPage from "./PcPage";
@@ -10,11 +11,18 @@ const BookingPage = () => {
     <>
       <Header />
       <div className="booking">
-        <PcPage />
-        <PsPage />
-        <VipPage />
+        {" "}
+        <div className="bk">
+          <PcPage />
+          <PsPage />
+          <VipPage />
+        </div>
+        <div className="booking_length">
+          <div></div>
+        </div>
       </div>
-      <Footer/>
+
+      <Footer />
     </>
   );
 };
