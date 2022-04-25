@@ -8,7 +8,6 @@ const Header = () => {
   
   const auth = useSelector((state) => state.applicationReducer.signIn);
 
-
   const handleOut = () => {
     if (!auth) {
       localStorage.clear();
@@ -20,7 +19,7 @@ const Header = () => {
   return (
     <header>
       <div className="container">
-        <div style={{ display: "flex", alignItems: "center" }}>
+        <div style={{ display: "flex", alignItems: "center"}}>
           <span className="logo">LOGO</span>
           <ul className="list">
             <Link className="link" to={"/"}>
@@ -38,7 +37,7 @@ const Header = () => {
             <Link className="link" to={"/news"}>
               Новости
             </Link>
-            <Link className="link" to={"/"}>
+            <Link className="link" to={"/contacts"}>
               Контакты
             </Link>
             <Link className="link"  to={`/profile/${id}`} >
